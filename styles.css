@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background: #0e1323;
+  display: flex;
+  justify-content: center;
+  padding: 253px 165px 253px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 255px);
+  grid-template-rows: repeat(2, 199px);
+  grid-column-gap: 30px;
+  grid-row-gap: 75px;
+
+  .jeremy {
+    width: 255px;
+    height: 518px;
+    flex-shrink: 0;
+    grid-row: span 2;
+    border-radius: 15px;
+    background: #1c204b;
+  }
+
+  .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .profile {
+    border-radius: 15px;
+    background: #5747ea;
+    width: 255px;
+    height: 354px;
+    flex-shrink: 0;
+  }
+
+  .work {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .play {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .study {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  .exercise {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .social {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .self-care {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+}
+
+.profile img {
+  width: 171px;
+  height: 114px;
+  border: 2px solid lightgray;
+}
+
+.profile {
+  padding: 37px 68.75px 80px 32px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background: #5747ea;
+  gap: 31.5px;
+}
+
+.report {
+  color: #bbc0ff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.name {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+.time1 {
+  padding: 26px 32px 182px 33px;
+  gap: 21px;
+  display: flex;
+  flex-direction: column;
+}
+.day,
+.month {
+  color: #7078c9;
+  font-size: 18px;
+  font-weight: 400;
+}
+.week {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.work {
+  background-image: url(./images/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: top 0px left 160px;
+  border-radius: 10px;
+  background-color: #f9855f;
+  height: 200px;
+}
+
+.main-div {
+  margin-top: 45px;
+  width: 255px;
+  height: 199px;
+  border-radius: 15px;
+  background: #1c204b;
+}
+
+.ellipsis-work {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 131px;
+  padding: 29px 30px 25px;
+}
+
+.ellipsis-play {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 136px;
+  padding: 29px 30px 25px;
+}
+
+.ellipsis-study,
+.ellipsis-social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 121px;
+  padding: 29px 30px 25px;
+}
+
+.ellipsis-exercise {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 100px;
+  padding: 29px 30px 25px;
+}
+
+.ellipsis-selfcare {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 95px;
+  padding: 29px 30px 25px;
+}
+
+.ellipsis-work span,
+.ellipsis-play span,
+.ellipsis-study span,
+.ellipsis-exercise span,
+.ellipsis-social span,
+.ellipsis-selfcare span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ellipsis span {
+  color: #fff;
+
+  font-size: 18px;
+
+  font-weight: 500;
+}
+
+.lastweek {
+  padding-left: 30px;
+  padding-right: 81px;
+  padding-bottom: 32px;
+}
+
+.hrs {
+  color: #fff;
+
+  font-size: 56px;
+
+  font-weight: 300;
+}
+
+.week-hrs {
+  color: #bbc0ff;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.play {
+  background-image: url(./images/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: top 0px left 160px;
+  border-radius: 10px;
+  background-color: #59b1cf;
+  height: 200px;
+}
+
+.study {
+  background-image: url(./images/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: top 0px left 160px;
+  border-radius: 10px;
+  background-color: #ed6e88;
+  height: 200px;
+}
+
+.exercise {
+  background-image: url(./images/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: top 0px left 160px;
+  border-radius: 10px;
+  background-color: #5be394;
+  height: 200px;
+}
+
+.social {
+  background-image: url(./images/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: top 0px left 160px;
+  border-radius: 10px;
+  background-color: #7b3fda;
+  height: 200px;
+}
+
+.self-care {
+  background-image: url(./images/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: top 0px left 160px;
+  border-radius: 10px;
+  background-color: #deb060;
+  height: 200px;
+}
